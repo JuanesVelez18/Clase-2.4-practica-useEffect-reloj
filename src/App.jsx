@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Clock from './components/Clock';
 
 const App = () => {
   // useState
@@ -47,7 +48,7 @@ const App = () => {
 
   return (
     <div className="h-full flex flex-col justify-center items-center p-10">
-      <h1 className="text-white text-5xl font-semibold">
+      {/* <h1 className="text-white text-5xl font-semibold">
         Template React Gen {count} - 1
       </h1>
       <button className="text-cyan-400 text-2xl" onClick={() => setCount(count - 1)}>
@@ -58,7 +59,8 @@ const App = () => {
       </p>
       <button className="text-rose-500 text-2xl" onClick={changeUser}>
         Change user
-      </button>
+      </button> */}
+      <Clock />
     </div>
   );
 };
